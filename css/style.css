@@ -449,6 +449,15 @@ header nav ul a:hover {
     }
 }
 
+@media (max-width:360px){
+    .desing .text {
+        padding: 10px;
+    }
+    .desing .image {
+        display: none;
+    }
+}
+
 
 .desing .text ul li::before {
     font-family: "Font Awesome 5 Free";
@@ -624,18 +633,30 @@ header nav ul a:hover {
     padding-bottom: var(--section-padding);
     position: relative;
     overflow: hidden;
-    height: 60vh;
+    height: 700px;
 }
 
-
+.about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .about img {
-    position: absolute;
     width: 300px;
-    bottom: -70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    align-self: center;
+  
 }
+/* 
+@media (max-width:360px){
+    .about img {
+        position: absolute;
+        width: 200px;
+        bottom: -70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+} */
 
 .stat {
     padding-top: var(--section-padding);
@@ -687,6 +708,9 @@ header nav ul a:hover {
         flex-basis: 25%;
     }
 }
+
+
+
 
 .stat .container .box i {
     background-color: black;
